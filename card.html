@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link css-->
+  <link rel="stylesheet" href="card.css">
+  <!-- title name -->
+  <title>Product management project</title>
+  <!-- link icon title -->
+  <link rel="icon" href="asset/undraw_Add_tasks_re_s5yj.png">
+</head>
+<body>
+  <div class="curds">
+   <div class="title-p">
+    <h1 class="btn-h">curds</h1>
+    <p class="btn-p">A product management project through which any current product is added, the product is modified, any product is deleted, or any product is searched for.</p>
+    </div>
+    <div class="inputs">
+    <input type="text" id="title" placeholder=" title here....">
+    <div class="btn">
+      <input onkeyup="gettotal()" type="number" id="price" placeholder="price">
+      <input onkeyup="gettotal()" type="number" id="texes" placeholder="texes">
+      <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads">
+      <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount">
+      <small  id="total"></small>
+    </div>
+    <input type="number"  id="count" placeholder="count">
+    <input type="text"    id="category" placeholder="category">
+    <button id="submit">click crate</button>
+
+</div>
+<div id="deleteall" style="margin-top: 10px;"></div>
+    <table>
+      <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>deleted</th>
+      </tr>
+      <tbody id="tbody">
+        
+      </tbody>
+    </table>
+  </div>
+<script src="card.js"></script>
+</body>
+</html>
